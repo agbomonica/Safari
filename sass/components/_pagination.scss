@@ -1,0 +1,44 @@
+.pagination {
+  grid-column: 1 / 3;
+  justify-self: end;
+  padding: 0 1.5rem;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+  gap: 3rem;
+
+  letter-spacing: 0.2px;
+  line-height: 1.4;
+  transition: all 0.3s;
+
+  &__page {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  &__link:link,
+  &__link:visited {
+    border-bottom: 3px solid transparent;
+    padding: 1.5rem 1.8rem;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__link:focus,
+  &__link:active {
+    border-bottom: 3px solid #ed165f;
+  }
+
+  &:hover,
+  &:active,
+  &:focus-within {
+    border-bottom: 0.5px solid transparent;
+  }
+
+  &__next-icon {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,93 @@
+.header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  height: 7rem;
+  padding: 4rem 8.6rem;
+  background-color: $color-grey;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__side {
+    flex: 0 0 30%;
+
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    line-height: 1.8;
+    font-size: 1.4rem;
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    transition: color 0.2s;
+  }
+
+  &__link:focus,
+  &__link:active {
+    color: $color-primary;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid currentColor;
+  }
+}
+
+.search {
+  flex: 0 0 65%;
+  display: flex;
+  align-items: center;
+
+  &__form {
+    display: inline-block;
+    width: 80%;
+  }
+
+  &__input {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: none;
+    color: currentColor;
+    letter-spacing: 0.2px;
+    background-color: transparent;
+    border-radius: 0;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__icon:active {
+    transform: translateY(-0.15rem);
+  }
+}
+
+.user-nav {
+  flex: 1;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+  transition: all 0.2s;
+
+  &__link:focus-within > &__icon path,
+  &__link:active > &__icon path {
+    fill: $color-primary;
+  }
+}

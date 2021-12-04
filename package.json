@@ -1,0 +1,29 @@
+{
+  "name": "safari",
+  "version": "1.0.0",
+  "description": "Safari e-commerce app",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass sass/main.scss css/style.css -w",
+    "compile:sass": "sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:sass": "sass css/style.prefix.css css/style.css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agbomonica/Safari.git"
+  },
+  "author": "Agbo Monica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agbomonica/Safari/issues"
+  },
+  "homepage": "https://github.com/agbomonica/Safari#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.0.2",
+    "sass": "^1.43.5"
+  }
+}

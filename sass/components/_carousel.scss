@@ -1,0 +1,24 @@
+.carousel__pages {
+  position: absolute;
+  // bottom: 20%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.carousel__page {
+  &:not(:last-child) {
+    margin-right: 2.6rem;
+  }
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+
+  &--active {
+    background-color: #fff;
+  }
+}
