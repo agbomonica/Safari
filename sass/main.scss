@@ -1,3 +1,4 @@
+@import "abstracts/mixins";
 @import "abstracts/variables";
 @import "base/base";
 @import "base/typography";
@@ -8,4 +9,5 @@
 @import "components/scroll-up";
 @import "layouts/footer";
 @import "layouts/header";
+@import "pages/clothes";
 @import "pages/home";

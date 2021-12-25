@@ -1,8 +1,9 @@
 .heading-tertiary {
-  display: inline-block;
+  text-transform: uppercase;
   font-size: 3rem;
-  font-weight: 500;
-  line-height: 1.4;
+  font-weight: 600;
+  line-height: $line-height-md;
+  letter-spacing: 3px;
 }
 
 .heading-secondary {

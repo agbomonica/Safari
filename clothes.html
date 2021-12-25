@@ -18,16 +18,16 @@
       <nav class="nav">
         <ul class="nav__list" role="list">
           <li class="nav__item">
-            <a href="#" class="nav__link">Home</a>
+            <a href="index.html" class="nav__link">Home</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Clothes</a>
+            <a href="clothes.html" class="nav__link">Clothes</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Shoes</a>
+            <a href="shoes.html" class="nav__link">Shoes</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Accessories</a>
+            <a href="accessories.html" class="nav__link">Accessories</a>
           </li>
         </ul>
       </nav>
@@ -144,207 +144,488 @@
     </header>
 
     <main class="main-content">
-      <section class="product-section">
+      <section class="product-cloth-section">
+        <h3 class="heading-tertiary">Clothes</h3>
         <div class="product">
-          <h2 class="heading-secondary product__text-grid">Shop your style</h2>
+          <span class="product__category-heading">Category</span>
+          <nav class="product__category-nav">
+            <ul class="product__category-sortlist" role="list">
+              <li class="product__category-sortitem dropdown">
+                <div class="dropdown__title-box">
+                  <button
+                    class="dropdown__title"
+                    type="button"
+                    arial-controls="sort-dropdown"
+                  >
+                    Sort by: Most popular
+                  </button>
+                  <svg
+                    width="11"
+                    height="7"
+                    viewBox="0 0 11 7"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M10 1L5.5 5.5L1 0.999999" stroke="black" />
+                  </svg>
+                </div>
 
-          <div class="product__gallery-box">
-            <figure class="product__gallery">
-              <img
-                src="img/clothes/cloth-2.jpg"
-                alt="cloth 2"
-                class="product__img"
-              />
-              <div class="product__description">
-                <span class="product__name">Multicolored armless top</span>
-                <span class="product__price">#10,000</span>
-              </div>
-            </figure>
+                <ul class="dropdown__menu" role="list" id="sort-dropdown">
+                  <li class="most-popular">
+                    <a href="#/">Most popular</a>
+                  </li>
+                  <li class="best-selling">
+                    <a href="#/">Best selling</a>
+                  </li>
+                  <li class="high-low">
+                    <a href="#/">Price: High to Low</a>
+                  </li>
 
-            <figure class="product__gallery">
-              <img
-                src="img/accessories/accessory-13.jpg"
-                alt="accessory 13"
-                class="product__img"
-              />
-              <div class="product__description">
-                <span class="product__name">Grey bee wrist-watch</span>
-                <span class="product__price">#10,000</span>
-              </div>
-            </figure>
+                  <li class="low-high">
+                    <a href="#/">Price: Low to High</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
 
-            <figure class="product__gallery">
-              <img
-                src="img/clothes/cloth-4.jpg"
-                alt="cloth 4"
-                class="product__img"
-              />
-              <div class="product__description">
-                <span class="product__name">Mini skirt</span>
-                <span class="product__price">#10,000</span>
-              </div>
-            </figure>
+          <div class="product__cloth grid">
+            <aside class="product__sidebar">
+              <div class="product__category">
+                <ul class="product__category-list" role="list">
+                  <li class="product__category-item">
+                    <a href="#" class="product__category-link">All</a>
+                  </li>
 
-            <figure class="product__gallery">
-              <img
-                src="img/clothes/cloth-1.jpg"
-                alt="cloth 1"
-                class="product__img"
-              />
-              <div class="product__description">
-                <span class="product__name">Red lightweight gown</span>
-                <span class="product__price">#10,000</span>
-              </div>
-            </figure>
+                  <li class="product__category-item">
+                    <a href="#" class="product__category-link">Dresses</a>
+                  </li>
 
-            <figure class="product__gallery">
-              <img
-                src="img/clothes/cloth-5.jpg"
-                alt="cloth 5"
-                class="product__img"
-              />
-              <div class="product__description">
-                <span class="product__name">Blue botton-down gown</span>
-                <span class="product__price">#10,000</span>
-              </div>
-            </figure>
+                  <li class="product__category-item">
+                    <a href="#" class="product__category-link">Denim</a>
+                  </li>
 
-            <figure class="product__gallery">
-              <img
-                src="img/accessories/accessory-14.jpg"
-                alt="accessory 14"
-                class="product__img"
-              />
-              <div class="product__description">
-                <span class="product__name">Moon and star neckpiece</span>
-                <span class="product__price">#10,000</span>
-              </div>
-            </figure>
+                  <li class="product__category-item">
+                    <a href="#" class="product__category-link">Jeans</a>
+                  </li>
 
-            <figure class="product__gallery">
-              <img
-                src="img/accessories/accessory-1.jpg"
-                alt="accessory 1"
-                class="product__img"
-              />
-              <div class="product__description">
-                <span class="product__name">Tambourine Crossbody Bag </span>
-                <span class="product__price">#10,000</span>
-              </div>
-            </figure>
+                  <li class="product__category-item">
+                    <a href="#" class="product__category-link">Jumpsuits</a>
+                  </li>
 
-            <figure class="product__gallery">
-              <img
-                src="img/accessories/accessory-15.jpg"
-                alt="accessory 15"
-                class="product__img"
-              />
-              <div class="product__description">
-                <span class="product__name">Katy Perry Killer Queen EDP </span>
-                <span class="product__price">#10,000</span>
-              </div>
-            </figure>
+                  <li class="product__category-item">
+                    <a href="#" class="product__category-link">Tops</a>
+                  </li>
 
-            <figure class="product__gallery">
-              <img
-                src="img/shoes/shoe-1.jpg"
-                alt="shoe 1"
-                class="product__img"
-              />
-              <div class="product__description">
-                <span class="product__name">High heels ladies shoes </span>
-                <span class="product__price">#10,000</span>
-              </div>
-            </figure>
+                  <li class="product__category-item">
+                    <a href="#" class="product__category-link"
+                      >Jackets &amp; coats</a
+                    >
+                  </li>
 
-            <figure class="product__gallery">
-              <img
-                src="img/accessories/accessory-3.jpg"
-                alt="accessory 3"
-                class="product__img"
-              />
-              <div class="product__description">
-                <span class="product__name">Nerdy oval glasses </span>
-                <span class="product__price">#10,000</span>
-              </div>
-            </figure>
+                  <li class="product__category-item">
+                    <a href="#" class="product__category-link">Pants</a>
+                  </li>
 
-            <figure class="product__gallery">
-              <img
-                src="img/accessories/accessory-16.jpg"
-                alt="accessory 16"
-                class="product__img"
-              />
-              <div class="product__description">
-                <span class="product__name">Diamond ladies ring </span>
-                <span class="product__price">#10,000</span>
-              </div>
-            </figure>
+                  <li class="product__category-item">
+                    <a href="#" class="product__category-link">Shorts</a>
+                  </li>
 
-            <figure class="product__gallery">
-              <img
-                src="img/clothes/cloth-3.jpg"
-                alt="cloth 3"
-                class="product__img"
-              />
-              <div class="product__description">
-                <span class="product__name">Ladies bush pants </span>
-                <span class="product__price">#10,000</span>
-              </div>
-            </figure>
+                  <li class="product__category-item">
+                    <a href="#" class="product__category-link">Skirts</a>
+                  </li>
 
-            <figure class="product__gallery">
-              <img
-                src="img/shoes/shoe-3.jpg"
-                alt="shoe 3"
-                class="product__img"
-              />
-              <div class="product__description">
-                <span class="product__name"
-                  >Guilhermina Embellished Slides
-                </span>
-                <span class="product__price">#10,000</span>
-              </div>
-            </figure>
+                  <li class="product__category-item">
+                    <a href="#" class="product__category-link"
+                      >Loungerie and underwears</a
+                    >
+                  </li>
 
-            <figure class="product__gallery">
-              <img
-                src="img/shoes/shoe-14.jpg"
-                alt="shoe 13"
-                class="product__img"
-              />
-              <div class="product__description">
-                <span class="product__name">Superga Plaid Sneakers </span>
-                <span class="product__price">#10,000</span>
+                  <li class="product__category-item">
+                    <a href="#" class="product__category-link">Leather</a>
+                  </li>
+                  <li class="product__category-item">
+                    <a href="#" class="product__category-link"
+                      >Sweaters &amp; knits</a
+                    >
+                  </li>
+                </ul>
               </div>
-            </figure>
 
-            <figure class="product__gallery">
-              <img
-                src="img/clothes/cloth-6.jpg"
-                alt="cloth 6"
-                class="product__img"
-              />
-              <div class="product__description">
-                <span class="product__name">Checked ladies trouser </span>
-                <span class="product__price">#10,000</span>
-              </div>
-            </figure>
+              <div class="product__size-box">
+                <div class="product__size-textbox">
+                  <span class="product__size-heading">Size</span>
+                  <div class="product__size-clear">
+                    <span>Clear</span>
+                    <svg
+                      width="9"
+                      height="9"
+                      viewBox="0 0 9 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M8 1L1 8" stroke="#C4C4C4" stroke-width="2" />
+                      <path d="M1 1L8 8" stroke="#C4C4C4" stroke-width="2" />
+                    </svg>
+                  </div>
+                </div>
 
-            <figure class="product__gallery">
-              <img
-                src="/img/accessories/accessory-10.jpg"
-                alt="accessory 10"
-                class="product__img"
-              />
-              <div class="product__description">
-                <span class="product__name">Beanie winter fleece</span>
-                <span class="product__price">#10,000</span>
+                <div class="product__sizes">
+                  <div class="product__size product__size--1">XXS</div>
+                  <div class="product__size product__size--2">XS</div>
+                  <div class="product__size product__size--3">M</div>
+                  <div class="product__size product__size--4">S</div>
+                  <div class="product__size product__size--5">L</div>
+                  <div class="product__size product__size--6">XL</div>
+                  <div class="product__size product__size--7">23</div>
+                  <div class="product__size product__size--8">24</div>
+                  <div class="product__size product__size--9">25</div>
+                  <div class="product__size product__size--10">26</div>
+                  <div class="product__size product__size--11">27</div>
+                  <div class="product__size product__size--12">28</div>
+                  <div class="product__size product__size--13">29</div>
+                  <div class="product__size product__size--14">30</div>
+                  <div class="product__size product__size--15">31</div>
+                  <div class="product__size product__size--16">32</div>
+                </div>
               </div>
-            </figure>
+
+              <div class="product__color-box">
+                <div class="product__color-textbox">
+                  <span class="product__color-heading">Color</span>
+                  <div class="product__color-clear">
+                    <span>Clear</span>
+                    <svg
+                      width="9"
+                      height="9"
+                      viewBox="0 0 9 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M8 1L1 8" stroke="#C4C4C4" stroke-width="2" />
+                      <path d="M1 1L8 8" stroke="#C4C4C4" stroke-width="2" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="product__colors">
+                  <div class="product__color">
+                    <div class="color product__color-1"></div>
+                    <span class="color-name">Biege</span>
+                  </div>
+
+                  <div class="product__color">
+                    <div class="color product__color-2"></div>
+                    <span class="color-name">Blue</span>
+                  </div>
+
+                  <div class="product__color">
+                    <div class="color product__color-3"></div>
+                    <span class="color-name">Black</span>
+                  </div>
+
+                  <div class="product__color">
+                    <div class="color product__color-4"></div>
+                    <span class="color-name">Orange</span>
+                  </div>
+
+                  <div class="product__color">
+                    <div class="color product__color-5"></div>
+                    <span class="color-name">Green</span>
+                  </div>
+
+                  <div class="product__color">
+                    <div class="color product__color-6"></div>
+                    <span class="color-name">Brown</span>
+                  </div>
+
+                  <div class="product__color">
+                    <div class="color product__color-7"></div>
+                    <span class="color-name">Purple</span>
+                  </div>
+
+                  <div class="product__color">
+                    <div class="color product__color-8"></div>
+                    <span class="color-name">Gold</span>
+                  </div>
+
+                  <div class="product__color">
+                    <div class="color product__color-9"></div>
+                    <span class="color-name">Taupe</span>
+                  </div>
+
+                  <div class="product__color">
+                    <div class="color product__color-10"></div>
+                    <span class="color-name">White</span>
+                  </div>
+
+                  <div class="product__color">
+                    <div class="color product__color-11"></div>
+                    <span class="color-name">Pink</span>
+                  </div>
+
+                  <div class="product__color">
+                    <div class="color product__color-12"></div>
+                    <span class="color-name">Red</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product__price-box">
+                <div class="product__price-textbox">
+                  <span class="product__price-heading">Price</span>
+                  <div class="product__price-clear">
+                    <span>Clear</span>
+                    <svg
+                      width="9"
+                      height="9"
+                      viewBox="0 0 9 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M8 1L1 8" stroke="#C4C4C4" stroke-width="2" />
+                      <path d="M1 1L8 8" stroke="#C4C4C4" stroke-width="2" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="product__prices">
+                  <form action="#/" class="product__price-form">
+                    <div class="product__price">
+                      <input
+                        type="checkbox"
+                        class="price__checkbox"
+                        id="price-1"
+                      />
+                      <label for="price-1"
+                        ><span>&#8358;0</span> -
+                        <span>&#8358;10,000</span></label
+                      >
+                    </div>
+
+                    <div class="product__price">
+                      <input
+                        type="checkbox"
+                        class="price__checkbox"
+                        id="price-2"
+                      />
+                      <label for="price-2"
+                        ><span>&#8358;10,000</span> -
+                        <span>&#8358;20,000</span></label
+                      >
+                    </div>
+
+                    <div class="product__price">
+                      <input
+                        type="checkbox"
+                        class="price__checkbox"
+                        id="price-3"
+                      />
+                      <label for="price-3"
+                        ><span>&#8358;20,000</span> -
+                        <span>&#8358;50,000</span></label
+                      >
+                    </div>
+
+                    <div class="product__price">
+                      <input
+                        type="checkbox"
+                        class="price__checkbox"
+                        id="price-4"
+                      />
+                      <label for="price-4"
+                        ><span>&#8358;50,000</span> -
+                        <span>&#8358;100,000</span></label
+                      >
+                    </div>
+
+                    <div class="product__price">
+                      <input
+                        type="checkbox"
+                        class="price__checkbox"
+                        id="price-5"
+                      />
+                      <label for="price-5"
+                        ><span>&#8358;100,000</span> -
+                        <span>&#8358;200,000</span></label
+                      >
+                    </div>
+
+                    <div class="product__price product__price--r1">
+                      <input
+                        type="input"
+                        class="price__input"
+                        placeholder="&#8358;"
+                      />
+                      <label for="price-r2">to</label>
+                      <input
+                        type="input"
+                        class="price__input"
+                        placeholder="&#8358;"
+                        id="price-r2"
+                      />
+                    </div>
+
+                    <!-- <div class="product__price product__price--r2"></div> -->
+
+                    <div class="btn__group">
+                      <button class="price__apply">Apply</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </aside>
+
+            <div class="product__cloth-gallery">
+              <figure class="product__gallery">
+                <img
+                  src="img/clothes/cloth-1.jpg"
+                  alt="cloth 1"
+                  class="product__img"
+                />
+                <div class="product__description">
+                  <span class="product__name">Red lightweight gown</span>
+                  <span class="product__price">#10,000</span>
+                </div>
+              </figure>
+
+              <figure class="product__gallery">
+                <img
+                  src="img/clothes/cloth-2.jpg"
+                  alt="cloth 2"
+                  class="product__img"
+                />
+                <div class="product__description">
+                  <span class="product__name">Multicolored armless top</span>
+                  <span class="product__price">#10,000</span>
+                </div>
+              </figure>
+
+              <figure class="product__gallery">
+                <img
+                  src="img/clothes/cloth-3.jpg"
+                  alt="cloth 3"
+                  class="product__img"
+                />
+                <div class="product__description">
+                  <span class="product__name">Ladies bush pants </span>
+                  <span class="product__price">#10,000</span>
+                </div>
+              </figure>
+
+              <figure class="product__gallery">
+                <img
+                  src="img/clothes/cloth-4.jpg"
+                  alt="cloth 4"
+                  class="product__img"
+                />
+                <div class="product__description">
+                  <span class="product__name">Mini skirt</span>
+                  <span class="product__price">#10,000</span>
+                </div>
+              </figure>
+
+              <figure class="product__gallery">
+                <img
+                  src="img/clothes/cloth-5.jpg"
+                  alt="cloth 5"
+                  class="product__img"
+                />
+                <div class="product__description">
+                  <span class="product__name">Blue botton-down gown</span>
+                  <span class="product__price">#10,000</span>
+                </div>
+              </figure>
+
+              <figure class="product__gallery">
+                <img
+                  src="img/clothes/cloth-6.jpg"
+                  alt="cloth 6"
+                  class="product__img"
+                />
+                <div class="product__description">
+                  <span class="product__name">Checked ladies trouser </span>
+                  <span class="product__price">#10,000</span>
+                </div>
+              </figure>
+
+              <figure class="product__gallery">
+                <img
+                  src="img/clothes/cloth-7.jpg"
+                  alt="cloth 7"
+                  class="product__img"
+                />
+                <div class="product__description">
+                  <span class="product__name"
+                    >Top with Pleated Skirt Satin
+                  </span>
+                  <span class="product__price">#10,000</span>
+                </div>
+              </figure>
+
+              <figure class="product__gallery">
+                <img
+                  src="img/clothes/cloth-8.jpg"
+                  alt="cloth 8"
+                  class="product__img"
+                />
+                <div class="product__description">
+                  <span class="product__name">Winter Warm Woolen Parka </span>
+                  <span class="product__price">#10,000</span>
+                </div>
+              </figure>
+
+              <figure class="product__gallery">
+                <img
+                  src="img/clothes/cloth-9.jpg"
+                  alt="cloth 9"
+                  class="product__img"
+                />
+                <div class="product__description">
+                  <span class="product__name">Summer Dress for Women </span>
+                  <span class="product__price">#10,000</span>
+                </div>
+              </figure>
+
+              <figure class="product__gallery">
+                <img
+                  src="img/clothes/cloth-10.jpg"
+                  alt="cloth 10"
+                  class="product__img"
+                />
+                <div class="product__description">
+                  <span class="product__name">Women office suit </span>
+                  <span class="product__price">#10,000</span>
+                </div>
+              </figure>
+
+              <figure class="product__gallery">
+                <img
+                  src="img/clothes/cloth-11.jpg"
+                  alt="cloth 11"
+                  class="product__img"
+                />
+                <div class="product__description">
+                  <span class="product__name">Single Breasted Cami Top</span>
+                  <span class="product__price">#10,000</span>
+                </div>
+              </figure>
+
+              <figure class="product__gallery">
+                <img
+                  src="img/clothes/cloth-12.jpg"
+                  alt="cloth 12"
+                  class="product__img"
+                />
+                <div class="product__description">
+                  <span class="product__name">Twill paper bag trousers </span>
+                  <span class="product__price">#10,000</span>
+                </div>
+              </figure>
+            </div>
           </div>
         </div>
       </section>
+
       <div class="paginate-scroll-box grid grid-cols-3">
         <div class="pagination">
           <div class="pagination__page">

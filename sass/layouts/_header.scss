@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  // margin-bottom: 8rem;
 
   &__side {
     flex: 0 0 30%;
@@ -31,7 +32,7 @@
   &__link:link,
   &__link:visited {
     text-decoration: none;
-    line-height: 1.8;
+    line-height: $line-height-md;
     font-size: 1.4rem;
     color: #000;
     font-weight: 700;

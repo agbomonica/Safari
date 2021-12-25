@@ -1,2 +1,5 @@
 # Safari
-Safari webstore
+
+### live preview
+
+[safari](https://safari-webstore.netlify.app/)

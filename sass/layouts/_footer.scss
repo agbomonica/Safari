@@ -67,7 +67,7 @@
     margin-right: -0.5rem;
 
     &:focus {
-      outline: 0;
+      outline: none;
       box-shadow: 0 0 0 0.1rem solid $color-primary;
     }
   }

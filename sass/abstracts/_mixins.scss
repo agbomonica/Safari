@@ -1,0 +1,31 @@
+@mixin sidebar-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@mixin sidebar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1.6rem;
+}
+
+@mixin sidebar-textbox {
+  padding: 0.6rem 0;
+  margin-bottom: 3.2rem;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+@mixin sidebar-clear {
+  margin-left: auto;
+  color: $color-grey-light--1;
+  font-size: 1.4rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
