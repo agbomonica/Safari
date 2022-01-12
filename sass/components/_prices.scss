@@ -1,0 +1,94 @@
+.price {
+  font-size: 1.4rem;
+
+  &__textbox {
+    @include sidebar-textbox;
+  }
+
+  &__heading {
+    @include sidebar-heading;
+  }
+
+  &__clear {
+    @include sidebar-clear;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    column-gap: 1.6rem;
+  }
+
+  &__list:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+
+  // &__input {
+  //   display: none;
+  // }
+
+  // &__checkbox {
+  //   display: inline-block;
+  //   width: 2.6rem;
+  //   height: 2.6rem;
+  //   border: 0.1rem solid #000;
+  // }
+}
+
+// &__price--r1 {
+//   display: flex;
+//   margin-bottom: 0;
+// }
+
+.price__input {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  // color: currentColor;
+  color: #000;
+  width: 2.6rem;
+  height: 2.6rem;
+  border: 0.1rem solid #000;
+  transform: translateY(-0.1rem);
+  display: grid;
+  place-content: center;
+}
+
+.price__input::before {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../img/check.svg) 0 0 no-repeat;
+  display: inline-block;
+  background-size: 15px;
+  // hides the checked state
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+
+  // clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  // box-shadow: inset 1rem 1rem $color-primary;
+  /* Windows High Contrast Mode */
+  // background-color: CanvasText;
+}
+
+.price__input:checked::before {
+  transform: scale(1);
+}
+
+.product__price--r1 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+// .price__input {
+//   width: 6rem;
+//   height: 2.6rem;
+// }
+
+// .price__input:focus {
+//   outline: none;
+//   box-shadow: 0 0 0 0.01rem currentColor;
+// }

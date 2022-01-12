@@ -1,0 +1,56 @@
+.wishlist {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+
+  opacity: 0;
+
+  &__favourite {
+    width: 3.8rem;
+    height: 3.8rem;
+    background-color: #fff;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1.2rem rgba($color: #000000, $alpha: 0.1);
+  }
+
+  &__heart-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: $color-primary;
+  }
+
+  &__cart {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+    width: 12.8rem;
+    height: 3.6rem;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 1.2rem rgba($color: #000000, $alpha: 0.1);
+    cursor: pointer;
+  }
+
+  &__cta {
+    display: inline-block;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}

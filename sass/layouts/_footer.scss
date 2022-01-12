@@ -16,7 +16,9 @@
   }
 
   &__grid {
-    grid-template-columns: repeat(3, max-content) 1fr max-content;
+    grid-template-columns:
+      min-content repeat(2, minmax(min-content, max-content))
+      minmax(min-content, 1fr) minmax(min-content, max-content);
   }
 
   &__nav-list,

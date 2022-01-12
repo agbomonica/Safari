@@ -1,0 +1,95 @@
+.dropdown__nav {
+  font-size: 1.4rem;
+  background-color: #fff;
+  line-height: $line-height-md;
+  letter-spacing: 0.2px;
+  border: 1.4px solid #000;
+  z-index: 15;
+  cursor: pointer;
+  transition: 280ms all 120ms ease-out;
+
+  position: absolute;
+  top: 5.2%;
+  right: 5%;
+  transform: translate(-5%, -5%);
+
+  // &:hover,
+  &:focus-within {
+    border-bottom: 1.4px solid transparent;
+  }
+
+  // &:hover .dropdown__menu,
+  &:focus-within .dropdown__menu {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+}
+
+.dropdown__list {
+  width: 100%;
+}
+
+.dropdown__item {
+  position: relative;
+}
+
+.dropdown__title-box {
+  padding: 0.5rem 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.dropdown__title {
+  background-color: transparent;
+  border: 0;
+  // margin: 0 3px;
+  cursor: pointer;
+  outline: none;
+  // border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.dropdown__menu {
+  position: absolute;
+  box-shadow: 0 0 0 1.4px #000;
+  width: 100%;
+  background-color: #fff;
+  z-index: 15;
+
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.dropdown__menu > li {
+  transition: all 0.3s;
+}
+
+.dropdown__menu > li:first-child {
+  margin-top: 0.6rem;
+}
+
+.dropdown__menu > li:last-child {
+  margin-bottom: 1rem;
+}
+
+.dropdown__menu > li:hover,
+.dropdown__menu > li:hover {
+  background-color: $color-primary;
+}
+
+.dropdown__link:link,
+.dropdown__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  padding: 0.5rem 2.4rem;
+}
+
+.dropdown__menu > li:hover .dropdown__link,
+.dropdown__menu > li:hover .dropdown__link {
+  color: #fff;
+}

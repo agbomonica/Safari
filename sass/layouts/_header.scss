@@ -37,7 +37,9 @@
     color: #000;
     font-weight: 700;
     letter-spacing: 0.2px;
-    transition: color 0.2s;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
   }
 
   &__link:focus,
