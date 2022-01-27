@@ -21,7 +21,9 @@
             <a href="index.html" class="nav__link">Home</a>
           </li>
           <li class="nav__item">
-            <a href="clothes.html" class="nav__link">Clothes</a>
+            <a href="clothes.html" class="nav__link nav__link--active">
+              Clothes</a
+            >
           </li>
           <li class="nav__item">
             <a href="shoes.html" class="nav__link">Shoes</a>
@@ -92,7 +94,7 @@
         </div>
 
         <nav class="user-nav">
-          <a href="#" class="user-nav__link">
+          <a href="account.html" class="user-nav__link">
             <svg
               class="user-nav__icon"
               width="16"
@@ -108,7 +110,7 @@
             </svg>
           </a>
 
-          <a href="#" class="user-nav__link">
+          <a href="cart.html" class="user-nav__link">
             <svg
               class="user-nav__icon"
               width="16"
@@ -124,7 +126,7 @@
             </svg>
           </a>
 
-          <a href="#" class="user-nav__link">
+          <a href="wishlist.html" class="user-nav__link">
             <svg
               class="user-nav__icon"
               width="16"
@@ -145,7 +147,7 @@
 
     <main class="main-content">
       <section class="product-cloth-section">
-        <h3 class="heading-tertiary">Clothes</h3>
+        <h3 class="heading-3">Clothes</h3>
         <div class="product">
           <span class="product__category-heading">Category</span>
           <nav class="dropdown__nav">
@@ -196,58 +198,58 @@
               <div class="product__category">
                 <ul class="product__category-list" role="list">
                   <li class="product__category-item">
-                    <a href="#" class="product__category-link">All</a>
+                    <a href="#/" class="product__category-link">All</a>
                   </li>
 
                   <li class="product__category-item">
-                    <a href="#" class="product__category-link">Dresses</a>
+                    <a href="#/" class="product__category-link">Dresses</a>
                   </li>
 
                   <li class="product__category-item">
-                    <a href="#" class="product__category-link">Denim</a>
+                    <a href="#/" class="product__category-link">Denim</a>
                   </li>
 
                   <li class="product__category-item">
-                    <a href="#" class="product__category-link">Jeans</a>
+                    <a href="#/" class="product__category-link">Jeans</a>
                   </li>
 
                   <li class="product__category-item">
-                    <a href="#" class="product__category-link">Jumpsuits</a>
+                    <a href="#/" class="product__category-link">Jumpsuits</a>
                   </li>
 
                   <li class="product__category-item">
-                    <a href="#" class="product__category-link">Tops</a>
+                    <a href="#/" class="product__category-link">Tops</a>
                   </li>
 
                   <li class="product__category-item">
-                    <a href="#" class="product__category-link"
+                    <a href="#/" class="product__category-link"
                       >Jackets &amp; coats</a
                     >
                   </li>
 
                   <li class="product__category-item">
-                    <a href="#" class="product__category-link">Pants</a>
+                    <a href="#/" class="product__category-link">Pants</a>
                   </li>
 
                   <li class="product__category-item">
-                    <a href="#" class="product__category-link">Shorts</a>
+                    <a href="#/" class="product__category-link">Shorts</a>
                   </li>
 
                   <li class="product__category-item">
-                    <a href="#" class="product__category-link">Skirts</a>
+                    <a href="#/" class="product__category-link">Skirts</a>
                   </li>
 
                   <li class="product__category-item">
-                    <a href="#" class="product__category-link"
+                    <a href="#/" class="product__category-link"
                       >Loungerie and underwears</a
                     >
                   </li>
 
                   <li class="product__category-item">
-                    <a href="#" class="product__category-link">Leather</a>
+                    <a href="#/" class="product__category-link">Leather</a>
                   </li>
                   <li class="product__category-item">
-                    <a href="#" class="product__category-link"
+                    <a href="#/" class="product__category-link"
                       >Sweaters &amp; knits</a
                     >
                   </li>
@@ -396,7 +398,7 @@
                     <div class="price__list">
                       <input
                         type="checkbox"
-                        class="price__input"
+                        class="price__checkbox-input"
                         id="price-1"
                       />
                       <label for="price-1">
@@ -409,7 +411,7 @@
                     <div class="price__list">
                       <input
                         type="checkbox"
-                        class="price__input"
+                        class="price__checkbox-input"
                         id="price-2"
                       />
                       <label for="price-2"
@@ -421,7 +423,7 @@
                     <div class="price__list">
                       <input
                         type="checkbox"
-                        class="price__input"
+                        class="price__checkbox-input"
                         id="price-3"
                       />
                       <label for="price-3"
@@ -433,7 +435,7 @@
                     <div class="price__list">
                       <input
                         type="checkbox"
-                        class="price__input"
+                        class="price__checkbox-input"
                         id="price-4"
                       />
                       <label for="price-4"
@@ -445,7 +447,7 @@
                     <div class="price__list">
                       <input
                         type="checkbox"
-                        class="price__input"
+                        class="price__checkbox-input"
                         id="price-5"
                       />
                       <label for="price-5"
@@ -454,25 +456,29 @@
                       >
                     </div>
 
-                    <div class="price__item">
-                      <input
-                        type="input"
-                        class="price__input"
-                        placeholder="&#8358;"
-                      />
-                      <label for="price-r2">to</label>
-                      <input
-                        type="input"
-                        class="price__input"
-                        placeholder="&#8358;"
-                        id="price-r2"
-                      />
-                    </div>
+                    <div class="price__range">
+                      <div class="price__range-inputbox">
+                        <input
+                          type="input"
+                          class="price__range-input"
+                          placeholder="&#8358;"
+                        />
 
-                    <!-- <div class="product__price product__price--r2"></div> -->
+                        <label for="price-r2" class="price__range-label"
+                          >to</label
+                        >
+                        <input
+                          type="input"
+                          class="price__range-input"
+                          placeholder="&#8358;"
+                        />
+                      </div>
 
-                    <div class="btn__group">
-                      <button class="price__apply">Apply</button>
+                      <div class="price__apply">
+                        <button class="btn btn--primary btn--apply">
+                          Apply
+                        </button>
+                      </div>
                     </div>
                   </form>
                 </div>
@@ -480,701 +486,725 @@
             </aside>
 
             <div class="product__cloth-gallery">
-              <figure class="product__gallery">
-                <img
-                  src="img/clothes/cloth-1.jpg"
-                  alt="cloth 1"
-                  class="product__img"
-                />
-                <div class="product__description">
-                  <span class="product__name">Red lightweight gown</span>
-                  <span class="product__price">#10,000</span>
-                </div>
-
-                <div class="wishlist">
-                  <div class="wishlist__favourite">
-                    <svg
-                      class="wishlist__heart-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="192"
-                      height="192"
-                      fill="#000000"
-                      viewBox="0 0 256 256"
-                    >
-                      <rect width="256" height="256" fill="none"></rect>
-                      <path
-                        d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
-                        fill="none"
-                        stroke="#ED165F"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="16"
-                      ></path>
-                    </svg>
+              <a href="#/" class="product-link">
+                <figure class="product__gallery">
+                  <img
+                    src="img/clothes/cloth-1.jpg"
+                    alt="cloth 1"
+                    class="product__img"
+                  />
+                  <div class="product__description">
+                    <span class="product__name">Red lightweight gown</span>
+                    <span class="product__price">#10,000</span>
                   </div>
 
-                  <div class="wishlist__cart">
-                    <div class="wishlist__cta-box">
-                      <button class="wishlist__cta">Add to cart</button>
+                  <div class="wishlist">
+                    <div class="wishlist__favourite">
+                      <svg
+                        class="wishlist__heart-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="192"
+                        height="192"
+                        fill="#000000"
+                        viewBox="0 0 256 256"
+                      >
+                        <rect width="256" height="256" fill="none"></rect>
+                        <path
+                          d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                          fill="none"
+                          stroke="#ED165F"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="16"
+                        ></path>
+                      </svg>
                     </div>
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
-                        fill="#ED165F"
-                      />
-                      <path
-                        d="M7.5 2.66675V5.66675M6 4.16675H9"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </figure>
 
-              <figure class="product__gallery">
-                <img
-                  src="img/clothes/cloth-2.jpg"
-                  alt="cloth 2"
-                  class="product__img"
-                />
-                <div class="product__description">
-                  <span class="product__name">Multicolored armless top</span>
-                  <span class="product__price">#10,000</span>
-                </div>
-
-                <div class="wishlist">
-                  <div class="wishlist__favourite">
-                    <svg
-                      class="wishlist__heart-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="192"
-                      height="192"
-                      fill="#000000"
-                      viewBox="0 0 256 256"
-                    >
-                      <rect width="256" height="256" fill="none"></rect>
-                      <path
-                        d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                    <div class="wishlist__cart">
+                      <div class="wishlist__cta-box">
+                        <button class="wishlist__cta">Add to cart</button>
+                      </div>
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
                         fill="none"
-                        stroke="#ED165F"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="16"
-                      ></path>
-                    </svg>
-                  </div>
-
-                  <div class="wishlist__cart">
-                    <div class="wishlist__cta-box">
-                      <button class="wishlist__cta">Add to cart</button>
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
+                          fill="#ED165F"
+                        />
+                        <path
+                          d="M7.5 2.66675V5.66675M6 4.16675H9"
+                          stroke="white"
+                          stroke-width="0.5"
+                        />
+                      </svg>
                     </div>
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
-                        fill="#ED165F"
-                      />
-                      <path
-                        d="M7.5 2.66675V5.66675M6 4.16675H9"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </svg>
                   </div>
-                </div>
-              </figure>
+                </figure>
+              </a>
 
-              <figure class="product__gallery">
-                <img
-                  src="img/clothes/cloth-3.jpg"
-                  alt="cloth 3"
-                  class="product__img"
-                />
-                <div class="product__description">
-                  <span class="product__name">Ladies bush pants </span>
-                  <span class="product__price">#10,000</span>
-                </div>
+              <a href="#/" class="product-link">
+                <figure class="product__gallery">
+                  <img
+                    src="img/clothes/cloth-2.jpg"
+                    alt="cloth 2"
+                    class="product__img"
+                  />
+                  <div class="product__description">
+                    <span class="product__name">Multicolored armless top</span>
+                    <span class="product__price">#10,000</span>
+                  </div>
 
-                <div class="wishlist">
-                  <div class="wishlist__favourite">
-                    <svg
-                      class="wishlist__heart-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="192"
-                      height="192"
-                      fill="#000000"
-                      viewBox="0 0 256 256"
-                    >
-                      <rect width="256" height="256" fill="none"></rect>
-                      <path
-                        d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                  <div class="wishlist">
+                    <div class="wishlist__favourite">
+                      <svg
+                        class="wishlist__heart-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="192"
+                        height="192"
+                        fill="#000000"
+                        viewBox="0 0 256 256"
+                      >
+                        <rect width="256" height="256" fill="none"></rect>
+                        <path
+                          d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                          fill="none"
+                          stroke="#ED165F"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="16"
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div class="wishlist__cart">
+                      <div class="wishlist__cta-box">
+                        <button class="wishlist__cta">Add to cart</button>
+                      </div>
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
                         fill="none"
-                        stroke="#ED165F"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="16"
-                      ></path>
-                    </svg>
-                  </div>
-
-                  <div class="wishlist__cart">
-                    <div class="wishlist__cta-box">
-                      <button class="wishlist__cta">Add to cart</button>
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
+                          fill="#ED165F"
+                        />
+                        <path
+                          d="M7.5 2.66675V5.66675M6 4.16675H9"
+                          stroke="white"
+                          stroke-width="0.5"
+                        />
+                      </svg>
                     </div>
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
-                        fill="#ED165F"
-                      />
-                      <path
-                        d="M7.5 2.66675V5.66675M6 4.16675H9"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </svg>
                   </div>
-                </div>
-              </figure>
+                </figure>
+              </a>
 
-              <figure class="product__gallery">
-                <img
-                  src="img/clothes/cloth-4.jpg"
-                  alt="cloth 4"
-                  class="product__img"
-                />
-                <div class="product__description">
-                  <span class="product__name">Mini skirt</span>
-                  <span class="product__price">#10,000</span>
-                </div>
+              <a href="#/" class="product-link">
+                <figure class="product__gallery">
+                  <img
+                    src="img/clothes/cloth-3.jpg"
+                    alt="cloth 3"
+                    class="product__img"
+                  />
+                  <div class="product__description">
+                    <span class="product__name">Ladies bush pants </span>
+                    <span class="product__price">#10,000</span>
+                  </div>
 
-                <div class="wishlist">
-                  <div class="wishlist__favourite">
-                    <svg
-                      class="wishlist__heart-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="192"
-                      height="192"
-                      fill="#000000"
-                      viewBox="0 0 256 256"
-                    >
-                      <rect width="256" height="256" fill="none"></rect>
-                      <path
-                        d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                  <div class="wishlist">
+                    <div class="wishlist__favourite">
+                      <svg
+                        class="wishlist__heart-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="192"
+                        height="192"
+                        fill="#000000"
+                        viewBox="0 0 256 256"
+                      >
+                        <rect width="256" height="256" fill="none"></rect>
+                        <path
+                          d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                          fill="none"
+                          stroke="#ED165F"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="16"
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div class="wishlist__cart">
+                      <div class="wishlist__cta-box">
+                        <button class="wishlist__cta">Add to cart</button>
+                      </div>
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
                         fill="none"
-                        stroke="#ED165F"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="16"
-                      ></path>
-                    </svg>
-                  </div>
-
-                  <div class="wishlist__cart">
-                    <div class="wishlist__cta-box">
-                      <button class="wishlist__cta">Add to cart</button>
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
+                          fill="#ED165F"
+                        />
+                        <path
+                          d="M7.5 2.66675V5.66675M6 4.16675H9"
+                          stroke="white"
+                          stroke-width="0.5"
+                        />
+                      </svg>
                     </div>
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
-                        fill="#ED165F"
-                      />
-                      <path
-                        d="M7.5 2.66675V5.66675M6 4.16675H9"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </svg>
                   </div>
-                </div>
-              </figure>
+                </figure>
+              </a>
 
-              <figure class="product__gallery">
-                <img
-                  src="img/clothes/cloth-5.jpg"
-                  alt="cloth 5"
-                  class="product__img"
-                />
-                <div class="product__description">
-                  <span class="product__name">Blue botton-down gown</span>
-                  <span class="product__price">#10,000</span>
-                </div>
+              <a href="#/" class="product-link">
+                <figure class="product__gallery">
+                  <img
+                    src="img/clothes/cloth-4.jpg"
+                    alt="cloth 4"
+                    class="product__img"
+                  />
+                  <div class="product__description">
+                    <span class="product__name">Mini skirt</span>
+                    <span class="product__price">#10,000</span>
+                  </div>
 
-                <div class="wishlist">
-                  <div class="wishlist__favourite">
-                    <svg
-                      class="wishlist__heart-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="192"
-                      height="192"
-                      fill="#000000"
-                      viewBox="0 0 256 256"
-                    >
-                      <rect width="256" height="256" fill="none"></rect>
-                      <path
-                        d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                  <div class="wishlist">
+                    <div class="wishlist__favourite">
+                      <svg
+                        class="wishlist__heart-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="192"
+                        height="192"
+                        fill="#000000"
+                        viewBox="0 0 256 256"
+                      >
+                        <rect width="256" height="256" fill="none"></rect>
+                        <path
+                          d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                          fill="none"
+                          stroke="#ED165F"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="16"
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div class="wishlist__cart">
+                      <div class="wishlist__cta-box">
+                        <button class="wishlist__cta">Add to cart</button>
+                      </div>
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
                         fill="none"
-                        stroke="#ED165F"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="16"
-                      ></path>
-                    </svg>
-                  </div>
-
-                  <div class="wishlist__cart">
-                    <div class="wishlist__cta-box">
-                      <button class="wishlist__cta">Add to cart</button>
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
+                          fill="#ED165F"
+                        />
+                        <path
+                          d="M7.5 2.66675V5.66675M6 4.16675H9"
+                          stroke="white"
+                          stroke-width="0.5"
+                        />
+                      </svg>
                     </div>
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
-                        fill="#ED165F"
-                      />
-                      <path
-                        d="M7.5 2.66675V5.66675M6 4.16675H9"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </svg>
                   </div>
-                </div>
-              </figure>
+                </figure>
+              </a>
 
-              <figure class="product__gallery">
-                <img
-                  src="img/clothes/cloth-6.jpg"
-                  alt="cloth 6"
-                  class="product__img"
-                />
-                <div class="product__description">
-                  <span class="product__name">Checked ladies trouser </span>
-                  <span class="product__price">#10,000</span>
-                </div>
+              <a href="#/" class="product-link">
+                <figure class="product__gallery">
+                  <img
+                    src="img/clothes/cloth-5.jpg"
+                    alt="cloth 5"
+                    class="product__img"
+                  />
+                  <div class="product__description">
+                    <span class="product__name">Blue botton-down gown</span>
+                    <span class="product__price">#10,000</span>
+                  </div>
 
-                <div class="wishlist">
-                  <div class="wishlist__favourite">
-                    <svg
-                      class="wishlist__heart-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="192"
-                      height="192"
-                      fill="#000000"
-                      viewBox="0 0 256 256"
-                    >
-                      <rect width="256" height="256" fill="none"></rect>
-                      <path
-                        d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                  <div class="wishlist">
+                    <div class="wishlist__favourite">
+                      <svg
+                        class="wishlist__heart-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="192"
+                        height="192"
+                        fill="#000000"
+                        viewBox="0 0 256 256"
+                      >
+                        <rect width="256" height="256" fill="none"></rect>
+                        <path
+                          d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                          fill="none"
+                          stroke="#ED165F"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="16"
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div class="wishlist__cart">
+                      <div class="wishlist__cta-box">
+                        <button class="wishlist__cta">Add to cart</button>
+                      </div>
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
                         fill="none"
-                        stroke="#ED165F"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="16"
-                      ></path>
-                    </svg>
-                  </div>
-
-                  <div class="wishlist__cart">
-                    <div class="wishlist__cta-box">
-                      <button class="wishlist__cta">Add to cart</button>
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
+                          fill="#ED165F"
+                        />
+                        <path
+                          d="M7.5 2.66675V5.66675M6 4.16675H9"
+                          stroke="white"
+                          stroke-width="0.5"
+                        />
+                      </svg>
                     </div>
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
-                        fill="#ED165F"
-                      />
-                      <path
-                        d="M7.5 2.66675V5.66675M6 4.16675H9"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </svg>
                   </div>
-                </div>
-              </figure>
+                </figure>
+              </a>
 
-              <figure class="product__gallery">
-                <img
-                  src="img/clothes/cloth-7.jpg"
-                  alt="cloth 7"
-                  class="product__img"
-                />
-                <div class="product__description">
-                  <span class="product__name"
-                    >Top with Pleated Skirt Satin
-                  </span>
-                  <span class="product__price">#10,000</span>
-                </div>
+              <a href="#/" class="product-link">
+                <figure class="product__gallery">
+                  <img
+                    src="img/clothes/cloth-6.jpg"
+                    alt="cloth 6"
+                    class="product__img"
+                  />
+                  <div class="product__description">
+                    <span class="product__name">Checked ladies trouser </span>
+                    <span class="product__price">#10,000</span>
+                  </div>
 
-                <div class="wishlist">
-                  <div class="wishlist__favourite">
-                    <svg
-                      class="wishlist__heart-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="192"
-                      height="192"
-                      fill="#000000"
-                      viewBox="0 0 256 256"
-                    >
-                      <rect width="256" height="256" fill="none"></rect>
-                      <path
-                        d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                  <div class="wishlist">
+                    <div class="wishlist__favourite">
+                      <svg
+                        class="wishlist__heart-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="192"
+                        height="192"
+                        fill="#000000"
+                        viewBox="0 0 256 256"
+                      >
+                        <rect width="256" height="256" fill="none"></rect>
+                        <path
+                          d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                          fill="none"
+                          stroke="#ED165F"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="16"
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div class="wishlist__cart">
+                      <div class="wishlist__cta-box">
+                        <button class="wishlist__cta">Add to cart</button>
+                      </div>
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
                         fill="none"
-                        stroke="#ED165F"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="16"
-                      ></path>
-                    </svg>
-                  </div>
-
-                  <div class="wishlist__cart">
-                    <div class="wishlist__cta-box">
-                      <button class="wishlist__cta">Add to cart</button>
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
+                          fill="#ED165F"
+                        />
+                        <path
+                          d="M7.5 2.66675V5.66675M6 4.16675H9"
+                          stroke="white"
+                          stroke-width="0.5"
+                        />
+                      </svg>
                     </div>
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
-                        fill="#ED165F"
-                      />
-                      <path
-                        d="M7.5 2.66675V5.66675M6 4.16675H9"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </svg>
                   </div>
-                </div>
-              </figure>
+                </figure>
+              </a>
 
-              <figure class="product__gallery">
-                <img
-                  src="img/clothes/cloth-8.jpg"
-                  alt="cloth 8"
-                  class="product__img"
-                />
-                <div class="product__description">
-                  <span class="product__name">Winter Warm Woolen Parka </span>
-                  <span class="product__price">#10,000</span>
-                </div>
+              <a href="#/" class="product-link">
+                <figure class="product__gallery">
+                  <img
+                    src="img/clothes/cloth-7.jpg"
+                    alt="cloth 7"
+                    class="product__img"
+                  />
+                  <div class="product__description">
+                    <span class="product__name"
+                      >Top with Pleated Skirt Satin
+                    </span>
+                    <span class="product__price">#10,000</span>
+                  </div>
 
-                <div class="wishlist">
-                  <div class="wishlist__favourite">
-                    <svg
-                      class="wishlist__heart-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="192"
-                      height="192"
-                      fill="#000000"
-                      viewBox="0 0 256 256"
-                    >
-                      <rect width="256" height="256" fill="none"></rect>
-                      <path
-                        d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                  <div class="wishlist">
+                    <div class="wishlist__favourite">
+                      <svg
+                        class="wishlist__heart-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="192"
+                        height="192"
+                        fill="#000000"
+                        viewBox="0 0 256 256"
+                      >
+                        <rect width="256" height="256" fill="none"></rect>
+                        <path
+                          d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                          fill="none"
+                          stroke="#ED165F"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="16"
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div class="wishlist__cart">
+                      <div class="wishlist__cta-box">
+                        <button class="wishlist__cta">Add to cart</button>
+                      </div>
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
                         fill="none"
-                        stroke="#ED165F"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="16"
-                      ></path>
-                    </svg>
-                  </div>
-
-                  <div class="wishlist__cart">
-                    <div class="wishlist__cta-box">
-                      <button class="wishlist__cta">Add to cart</button>
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
+                          fill="#ED165F"
+                        />
+                        <path
+                          d="M7.5 2.66675V5.66675M6 4.16675H9"
+                          stroke="white"
+                          stroke-width="0.5"
+                        />
+                      </svg>
                     </div>
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
-                        fill="#ED165F"
-                      />
-                      <path
-                        d="M7.5 2.66675V5.66675M6 4.16675H9"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </svg>
                   </div>
-                </div>
-              </figure>
+                </figure>
+              </a>
 
-              <figure class="product__gallery">
-                <img
-                  src="img/clothes/cloth-9.jpg"
-                  alt="cloth 9"
-                  class="product__img"
-                />
-                <div class="product__description">
-                  <span class="product__name">Summer Dress for Women </span>
-                  <span class="product__price">#10,000</span>
-                </div>
-                <div class="wishlist">
-                  <div class="wishlist__favourite">
-                    <svg
-                      class="wishlist__heart-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="192"
-                      height="192"
-                      fill="#000000"
-                      viewBox="0 0 256 256"
-                    >
-                      <rect width="256" height="256" fill="none"></rect>
-                      <path
-                        d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+              <a href="#/" class="product-link">
+                <figure class="product__gallery">
+                  <img
+                    src="img/clothes/cloth-8.jpg"
+                    alt="cloth 8"
+                    class="product__img"
+                  />
+                  <div class="product__description">
+                    <span class="product__name">Winter Warm Woolen Parka </span>
+                    <span class="product__price">#10,000</span>
+                  </div>
+
+                  <div class="wishlist">
+                    <div class="wishlist__favourite">
+                      <svg
+                        class="wishlist__heart-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="192"
+                        height="192"
+                        fill="#000000"
+                        viewBox="0 0 256 256"
+                      >
+                        <rect width="256" height="256" fill="none"></rect>
+                        <path
+                          d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                          fill="none"
+                          stroke="#ED165F"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="16"
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div class="wishlist__cart">
+                      <div class="wishlist__cta-box">
+                        <button class="wishlist__cta">Add to cart</button>
+                      </div>
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
                         fill="none"
-                        stroke="#ED165F"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="16"
-                      ></path>
-                    </svg>
-                  </div>
-
-                  <div class="wishlist__cart">
-                    <div class="wishlist__cta-box">
-                      <button class="wishlist__cta">Add to cart</button>
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
+                          fill="#ED165F"
+                        />
+                        <path
+                          d="M7.5 2.66675V5.66675M6 4.16675H9"
+                          stroke="white"
+                          stroke-width="0.5"
+                        />
+                      </svg>
                     </div>
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
-                        fill="#ED165F"
-                      />
-                      <path
-                        d="M7.5 2.66675V5.66675M6 4.16675H9"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </svg>
                   </div>
-                </div>
-              </figure>
+                </figure>
+              </a>
 
-              <figure class="product__gallery">
-                <img
-                  src="img/clothes/cloth-10.jpg"
-                  alt="cloth 10"
-                  class="product__img"
-                />
-                <div class="product__description">
-                  <span class="product__name">Women office suit </span>
-                  <span class="product__price">#10,000</span>
-                </div>
+              <a href="#/" class="product-link">
+                <figure class="product__gallery">
+                  <img
+                    src="img/clothes/cloth-9.jpg"
+                    alt="cloth 9"
+                    class="product__img"
+                  />
+                  <div class="product__description">
+                    <span class="product__name">Summer Dress for Women </span>
+                    <span class="product__price">#10,000</span>
+                  </div>
+                  <div class="wishlist">
+                    <div class="wishlist__favourite">
+                      <svg
+                        class="wishlist__heart-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="192"
+                        height="192"
+                        fill="#000000"
+                        viewBox="0 0 256 256"
+                      >
+                        <rect width="256" height="256" fill="none"></rect>
+                        <path
+                          d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                          fill="none"
+                          stroke="#ED165F"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="16"
+                        ></path>
+                      </svg>
+                    </div>
 
-                <div class="wishlist">
-                  <div class="wishlist__favourite">
-                    <svg
-                      class="wishlist__heart-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="192"
-                      height="192"
-                      fill="#000000"
-                      viewBox="0 0 256 256"
-                    >
-                      <rect width="256" height="256" fill="none"></rect>
-                      <path
-                        d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                    <div class="wishlist__cart">
+                      <div class="wishlist__cta-box">
+                        <button class="wishlist__cta">Add to cart</button>
+                      </div>
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
                         fill="none"
-                        stroke="#ED165F"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="16"
-                      ></path>
-                    </svg>
-                  </div>
-
-                  <div class="wishlist__cart">
-                    <div class="wishlist__cta-box">
-                      <button class="wishlist__cta">Add to cart</button>
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
+                          fill="#ED165F"
+                        />
+                        <path
+                          d="M7.5 2.66675V5.66675M6 4.16675H9"
+                          stroke="white"
+                          stroke-width="0.5"
+                        />
+                      </svg>
                     </div>
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
-                        fill="#ED165F"
-                      />
-                      <path
-                        d="M7.5 2.66675V5.66675M6 4.16675H9"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </svg>
                   </div>
-                </div>
-              </figure>
+                </figure>
+              </a>
 
-              <figure class="product__gallery">
-                <img
-                  src="img/clothes/cloth-11.jpg"
-                  alt="cloth 11"
-                  class="product__img"
-                />
-                <div class="product__description">
-                  <span class="product__name">Single Breasted Cami Top</span>
-                  <span class="product__price">#10,000</span>
-                </div>
+              <a href="#/" class="product-link">
+                <figure class="product__gallery">
+                  <img
+                    src="img/clothes/cloth-10.jpg"
+                    alt="cloth 10"
+                    class="product__img"
+                  />
+                  <div class="product__description">
+                    <span class="product__name">Women office suit </span>
+                    <span class="product__price">#10,000</span>
+                  </div>
 
-                <div class="wishlist">
-                  <div class="wishlist__favourite">
-                    <svg
-                      class="wishlist__heart-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="192"
-                      height="192"
-                      fill="#000000"
-                      viewBox="0 0 256 256"
-                    >
-                      <rect width="256" height="256" fill="none"></rect>
-                      <path
-                        d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                  <div class="wishlist">
+                    <div class="wishlist__favourite">
+                      <svg
+                        class="wishlist__heart-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="192"
+                        height="192"
+                        fill="#000000"
+                        viewBox="0 0 256 256"
+                      >
+                        <rect width="256" height="256" fill="none"></rect>
+                        <path
+                          d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                          fill="none"
+                          stroke="#ED165F"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="16"
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div class="wishlist__cart">
+                      <div class="wishlist__cta-box">
+                        <button class="wishlist__cta">Add to cart</button>
+                      </div>
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
                         fill="none"
-                        stroke="#ED165F"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="16"
-                      ></path>
-                    </svg>
-                  </div>
-
-                  <div class="wishlist__cart">
-                    <div class="wishlist__cta-box">
-                      <button class="wishlist__cta">Add to cart</button>
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
+                          fill="#ED165F"
+                        />
+                        <path
+                          d="M7.5 2.66675V5.66675M6 4.16675H9"
+                          stroke="white"
+                          stroke-width="0.5"
+                        />
+                      </svg>
                     </div>
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
-                        fill="#ED165F"
-                      />
-                      <path
-                        d="M7.5 2.66675V5.66675M6 4.16675H9"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </svg>
                   </div>
-                </div>
-              </figure>
+                </figure>
+              </a>
 
-              <figure class="product__gallery">
-                <img
-                  src="img/clothes/cloth-12.jpg"
-                  alt="cloth 12"
-                  class="product__img"
-                />
-                <div class="product__description">
-                  <span class="product__name">Twill paper bag trousers </span>
-                  <span class="product__price">#10,000</span>
-                </div>
-                <div class="wishlist">
-                  <div class="wishlist__favourite">
-                    <svg
-                      class="wishlist__heart-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="192"
-                      height="192"
-                      fill="#000000"
-                      viewBox="0 0 256 256"
-                    >
-                      <rect width="256" height="256" fill="none"></rect>
-                      <path
-                        d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+              <a href="#/" class="product-link">
+                <figure class="product__gallery">
+                  <img
+                    src="img/clothes/cloth-11.jpg"
+                    alt="cloth 11"
+                    class="product__img"
+                  />
+                  <div class="product__description">
+                    <span class="product__name">Single Breasted Cami Top</span>
+                    <span class="product__price">#10,000</span>
+                  </div>
+
+                  <div class="wishlist">
+                    <div class="wishlist__favourite">
+                      <svg
+                        class="wishlist__heart-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="192"
+                        height="192"
+                        fill="#000000"
+                        viewBox="0 0 256 256"
+                      >
+                        <rect width="256" height="256" fill="none"></rect>
+                        <path
+                          d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                          fill="none"
+                          stroke="#ED165F"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="16"
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div class="wishlist__cart">
+                      <div class="wishlist__cta-box">
+                        <button class="wishlist__cta">Add to cart</button>
+                      </div>
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
                         fill="none"
-                        stroke="#ED165F"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="16"
-                      ></path>
-                    </svg>
-                  </div>
-
-                  <div class="wishlist__cart">
-                    <div class="wishlist__cta-box">
-                      <button class="wishlist__cta">Add to cart</button>
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
+                          fill="#ED165F"
+                        />
+                        <path
+                          d="M7.5 2.66675V5.66675M6 4.16675H9"
+                          stroke="white"
+                          stroke-width="0.5"
+                        />
+                      </svg>
                     </div>
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
-                        fill="#ED165F"
-                      />
-                      <path
-                        d="M7.5 2.66675V5.66675M6 4.16675H9"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </svg>
                   </div>
-                </div>
-              </figure>
+                </figure>
+              </a>
+
+              <a href="#/" class="product-link">
+                <figure class="product__gallery">
+                  <img
+                    src="img/clothes/cloth-12.jpg"
+                    alt="cloth 12"
+                    class="product__img"
+                  />
+                  <div class="product__description">
+                    <span class="product__name">Twill paper bag trousers </span>
+                    <span class="product__price">#10,000</span>
+                  </div>
+                  <div class="wishlist">
+                    <div class="wishlist__favourite">
+                      <svg
+                        class="wishlist__heart-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="192"
+                        height="192"
+                        fill="#000000"
+                        viewBox="0 0 256 256"
+                      >
+                        <rect width="256" height="256" fill="none"></rect>
+                        <path
+                          d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                          fill="none"
+                          stroke="#ED165F"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="16"
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div class="wishlist__cart">
+                      <div class="wishlist__cta-box">
+                        <button class="wishlist__cta">Add to cart</button>
+                      </div>
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.6667 10.6667C9.92667 10.6667 9.33333 11.26 9.33333 12C9.33333 12.3536 9.47381 12.6928 9.72386 12.9428C9.97391 13.1929 10.313 13.3333 10.6667 13.3333C11.0203 13.3333 11.3594 13.1929 11.6095 12.9428C11.8595 12.6928 12 12.3536 12 12C12 11.6464 11.8595 11.3072 11.6095 11.0572C11.3594 10.8071 11.0203 10.6667 10.6667 10.6667ZM0 0V1.33333H1.33333L3.73333 6.39333L2.82667 8.02667C2.72667 8.21333 2.66667 8.43333 2.66667 8.66667C2.66667 9.02029 2.80714 9.35943 3.05719 9.60948C3.30724 9.85952 3.64638 10 4 10H12V8.66667H4.28C4.2358 8.66667 4.1934 8.64911 4.16215 8.61785C4.13089 8.5866 4.11333 8.5442 4.11333 8.5C4.11333 8.46667 4.12 8.44 4.13333 8.42L4.73333 7.33333H9.7C10.2 7.33333 10.64 7.05333 10.8667 6.64667L13.2533 2.33333C13.3 2.22667 13.3333 2.11333 13.3333 2C13.3333 1.82319 13.2631 1.65362 13.1381 1.5286C13.013 1.40357 12.8435 1.33333 12.6667 1.33333H2.80667L2.18 0H0ZM4 10.6667C3.26 10.6667 2.66667 11.26 2.66667 12C2.66667 12.3536 2.80714 12.6928 3.05719 12.9428C3.30724 13.1929 3.64638 13.3333 4 13.3333C4.35362 13.3333 4.69276 13.1929 4.94281 12.9428C5.19286 12.6928 5.33333 12.3536 5.33333 12C5.33333 11.6464 5.19286 11.3072 4.94281 11.0572C4.69276 10.8071 4.35362 10.6667 4 10.6667Z"
+                          fill="#ED165F"
+                        />
+                        <path
+                          d="M7.5 2.66675V5.66675M6 4.16675H9"
+                          stroke="white"
+                          stroke-width="0.5"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </figure>
+              </a>
             </div>
           </div>
         </div>
@@ -1360,7 +1390,7 @@
               id="cta"
               placeholder="Email address"
             />
-            <div class="footer__cta-button">Ok</div>
+            <button class="footer__cta-button btn btn--primary">Ok</button>
           </div>
         </div>
 

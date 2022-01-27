@@ -31,10 +31,9 @@
 
   &__link:link,
   &__link:visited {
-    text-decoration: none;
     line-height: $line-height-md;
     font-size: 1.4rem;
-    color: #000;
+    color: $color-grey-dark--2;
     font-weight: 700;
     letter-spacing: 0.2px;
     padding-bottom: 1.2rem;
@@ -42,12 +41,15 @@
     transition: all 0.3s;
   }
 
-  &__link:focus,
-  &__link:active {
+  &__link:hover,
+  &__link:focus {
     color: $color-primary;
     padding-bottom: 1.2rem;
-    border-bottom: 1px solid currentColor;
   }
+}
+
+.nav__link.nav__link--active {
+  border-bottom: 1px solid $color-primary;
 }
 
 .search {
@@ -89,8 +91,12 @@
   align-items: center;
   transition: all 0.2s;
 
-  &__link:focus-within > &__icon path,
+  &__link:hover > &__icon path,
   &__link:active > &__icon path {
+    fill: $color-primary;
+  }
+
+  &__link.user-nav__link--active &__icon path {
     fill: $color-primary;
   }
 }

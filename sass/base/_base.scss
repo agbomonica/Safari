@@ -14,11 +14,17 @@
   box-sizing: border-box;
 }
 
+// *:focus {
+//   outline: 0;
+//   box-shadow: 0 0 0 2px rgba($color-primary, 0.9);
+// }
+
 html {
   font-size: 62.5%;
 }
 
 body {
+  color: #333333;
   font-family: "Mulish", sans-serif;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
@@ -29,6 +35,10 @@ body {
 ul[role="list"],
 ol[role="list"] {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* A elements that don't have a class get default styles */
@@ -49,6 +59,7 @@ button,
 textarea,
 select {
   font: inherit;
+  font-size: 1.6rem;
 }
 
 .container {

@@ -3,16 +3,19 @@
   padding: 2.4rem;
   font-size: 1.4rem;
 
-  &__nav-link,
-  &__social-link {
-    text-decoration: none;
+  &__nav-link:link,
+  &__nav-link:visited,
+  &__social-link:link,
+  &__social-link:visited {
     color: currentColor;
-    transition: all 0.5s;
+    transition: all 0.2s;
   }
 
   &__nav-link:hover,
+  &__nav-link:active,
+  &__social-link:hover,
   &__social-link:active {
-    color: $color-grey-light;
+    color: $color-primary;
   }
 
   &__grid {
@@ -38,7 +41,7 @@
 
   &__contacts {
     font-style: normal;
-    color: #000;
+    color: $color-grey-dark--2;
 
     & > *:not(:last-child) {
       margin-bottom: 0.5rem;
@@ -47,7 +50,6 @@
     & > a {
       display: block;
       color: currentColor;
-      text-decoration: none;
     }
   }
 
@@ -63,38 +65,24 @@
 
   &__cta-input {
     width: 80%;
+    color: inherit;
     padding: 0.9rem;
-    border-radius: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
     border: 0.1rem solid $color-primary;
-    margin-right: -0.5rem;
+    backface-visibility: hidden;
 
     &:focus {
       outline: none;
-      box-shadow: 0 0 0 0.1rem solid $color-primary;
+      box-shadow: 0 0 0 0.15rem $color-primary;
     }
   }
   &__cta-button {
-    display: inline-block;
     padding: 1rem 2rem;
-    background-color: $color-primary;
-    color: #fff;
-    text-transform: uppercase;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     border-top-right-radius: 0.3rem;
     border-bottom-right-radius: 0.3rem;
-    cursor: pointer;
     transition: all 0.2s;
-
-    &:hover,
-    &:active {
-      background-color: $color-primary-dark;
-    }
   }
-
-  // &__social-icon {
-  //   transition: all 0.2s;
-  //   &:hover,
-  //   &:active {
-  //     stroke: $color-primary-dark;
-  //   }
-  // }
 }

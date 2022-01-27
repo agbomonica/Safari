@@ -1,0 +1,82 @@
+.sidebar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__heading {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3.2rem 2rem;
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: 12rem;
+      width: 100%;
+      position: absolute;
+      top: -50%;
+      left: 0;
+      background: url(../img/user-bg.svg) no-repeat;
+      background-size: 100%;
+      z-index: -1;
+      transform: scaleY(0) translateY(-20%);
+    }
+
+    //if the active class is present
+    &--active::after {
+      transform: scaleY(1) translateY(-20%);
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: $color-grey-dark--2;
+    padding: 0.5rem 1.6rem;
+    z-index: 100;
+    transition: all 0.3s;
+
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+  }
+
+  &__link:hover {
+    color: $color-primary;
+  }
+
+  &__link:hover &__icon path {
+    fill: $color-primary;
+  }
+
+  &__item--active &__link,
+  &__item--active:hover &__link {
+    color: #fff;
+  }
+
+  &__item--active &__icon path,
+  &__item--active:hover &__icon path {
+    fill: #fff;
+  }
+
+  &__footer {
+    padding: 4.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}

@@ -54,6 +54,10 @@
   padding: 4rem 0;
 }
 
+.product-link {
+  color: $color-grey-dark--2;
+}
+
 .product {
   &__text-grid {
     display: grid;
@@ -67,7 +71,7 @@
       width: 100%;
       display: block;
       height: 1px;
-      background-color: #000;
+      background-color: $color-grey-dark--2;
     }
 
     &::before {
@@ -93,6 +97,7 @@
     grid-template-columns: repeat(4, minmax(25rem, 1fr));
     column-gap: 3.2rem;
     row-gap: 6.4rem;
+    align-items: start;
   }
 
   &__gallery {
@@ -102,7 +107,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: box-shadow 0.3s;
+    transition: box-shadow 0.2s;
 
     &:hover {
       box-shadow: 0 1rem 2.4rem rgba(0, 0, 0, 0.2);

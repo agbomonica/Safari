@@ -1,0 +1,88 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+    padding: 1rem 1.6rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  &--transform {
+    text-transform: uppercase;
+  }
+
+  &--spaced {
+    letter-spacing: 0.2rem;
+  }
+
+  &--sm {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  &--md {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  &--lg {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  &--primary {
+    color: #fff;
+    background-color: $color-primary;
+
+    &:hover,
+    &:active {
+      background-color: $color-primary-dark--1;
+    }
+  }
+
+  &--secondary {
+    padding: 0 !important;
+    border-radius: 0 !important;
+    color: $color-primary;
+    background-color: transparent;
+
+    &:hover,
+    &:active {
+      color: $color-primary-dark--2;
+    }
+  }
+
+  &--outline {
+    color: $color-grey-dark--2;
+    background-color: transparent;
+    box-shadow: inset 0 0 0 0.2rem $color-primary;
+
+    &:hover,
+    &:active {
+      background-color: $color-primary;
+      color: #fff;
+    }
+  }
+
+  &--signin,
+  &--signup {
+    font-weight: 500;
+    width: 80%;
+  }
+
+  &--order {
+    width: 100%;
+  }
+
+  &--apply {
+    padding: 0.4rem 1rem;
+    border-radius: 2px;
+  }
+
+  &--submit {
+    justify-self: start;
+  }
+}

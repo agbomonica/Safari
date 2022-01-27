@@ -1,0 +1,51 @@
+.user-section {
+  padding: 2.4rem 4.8rem 9.6rem;
+}
+
+.user__heading {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.user__title {
+  font-size: 2rem;
+  margin-bottom: 4.8rem;
+}
+
+.forget-password {
+  color: inherit;
+  border-bottom: 1px solid $color-grey-dark--2;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $color-grey-dark;
+    border-bottom: 1px solid $color-primary;
+  }
+}
+
+.address {
+  font-size: 1.4rem;
+  padding: 3.2rem 3.2rem 4.8rem;
+  @extend %dashboard-base-styles;
+  width: 100%;
+  margin-bottom: 3.2rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  &__cta {
+    display: flex;
+    gap: 3.2rem;
+    margin-left: auto;
+    align-items: center;
+  }
+
+  &__user-telephone:link,
+  &__user-telephone:visited {
+    color: inherit;
+  }
+}

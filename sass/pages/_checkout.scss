@@ -1,0 +1,123 @@
+.checkout {
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+  align-items: start;
+  grid-template-rows: 18rem min-content;
+}
+
+.shipping {
+  padding: 4.8rem 3.2rem 6.4rem;
+
+  &__heading-box {
+    @include items-flex;
+  }
+}
+
+.delivery {
+  @extend %dashboard-base-styles;
+  padding: 4.8rem 3.2rem 3.2rem;
+
+  &__heading {
+    @include items-flex;
+  }
+  &__content {
+    padding: 2.4rem 0;
+    font-size: 1.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.payment {
+  @extend %dashboard-base-styles;
+  padding: 4.8rem 3.2rem 3.2rem;
+  font-size: 1.4rem;
+
+  &__heading {
+    @include items-flex;
+  }
+
+  &__content {
+    padding: 3.2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  &__card-instruction,
+  &__delivery-instruction {
+    font-size: 10px;
+  }
+
+  &__card-description {
+    width: 80%;
+    color: $color-grey-dark;
+    transform: translateX(2.4rem);
+    margin-bottom: 1.6rem;
+  }
+
+  &__delivery-instruction {
+    transform: translateX(1.6rem);
+  }
+
+  &__instruction-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
+
+.checkout-cta {
+  padding-top: 3.2rem;
+
+  &__label {
+    font-size: 1.6rem;
+    font-weight: 600;
+    align-self: center;
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: $color-grey-dark--2;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgb(0, 0, 0);
+    transition: background-color 0.2s;
+
+    &:hover,
+    &--true.checkout-cta__btn--active,
+    &--false.checkout-cta__btn--active {
+      color: #fff;
+      background-color: $color-primary;
+      box-shadow: 0 0 0 1px transparent;
+    }
+  }
+
+  &__text {
+    display: none;
+  }
+  &__submit {
+    margin-top: 6rem;
+  }
+}
+
+.btn-true {
+  margin-left: 16rem;
+  margin-right: 1.4rem;
+}
+
+// add or remove classname: checkout-cta__btn--true
+.checkout-cta__btn.checkout-cta__btn--true ~ .checkout-cta__text {
+  display: block;
+}
+
+// add or remove classname: checkout-cta__btn--false
+.checkout-cta__btn.checkout-cta__btn--false ~ .checkout-cta__text {
+  display: none;
+}

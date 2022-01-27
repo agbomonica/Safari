@@ -1,11 +1,17 @@
 // PRIMARY COLOR:
 $color-primary: #ed165f;
-$color-primary-dark: #d51456;
+$color-primary-dark--1: #d51456;
+$color-primary-dark--2: #be124c;
 
 // TEXT COLOR
 $color-grey: #f5f5f5;
 $color-grey-light: #4d4d4d;
-$color-grey-dark: #686868;
 $color-grey-light--1: #c4c4c4;
+$color-grey-dark: #686868;
+$color-grey-dark--2: #333333;
 
 $line-height-md: 1.8;
+
+$select-border: #777;
+$select-focus: blue;
+$select-arrow: $select-border;

@@ -1,0 +1,102 @@
+.table {
+  &__head {
+    font-size: 1.6rem;
+    color: $color-grey-dark;
+    text-transform: uppercase;
+    border-collapse: collapse;
+    display: table;
+    width: 100%;
+
+    & > div {
+      display: table-cell;
+      font-weight: 600;
+    }
+
+    & .description {
+      width: 50.46%;
+    }
+    & .quantity {
+      width: 12.32%;
+    }
+    & .unit-price {
+      width: 18.1%;
+    }
+    & .subtotal {
+      width: 18.1%;
+    }
+  }
+
+  &__body {
+    background-color: #fff;
+    padding: 2.4rem;
+    margin: 1rem 0;
+    font-size: 2rem;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+
+    & > div {
+      display: table-cell;
+      vertical-align: top;
+      padding: 2.4rem 1.6rem 3.2rem;
+    }
+
+    & .descriptionbox {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      grid-template-rows: min-content min-content;
+      gap: 3.2rem;
+
+      & .item__img {
+        grid-row: 1 / span 2;
+      }
+
+      .item__details a:link,
+      .item__details a:visited {
+        margin-bottom: 0.8rem;
+        color: inherit;
+        transition: all 0.2s;
+      }
+
+      .item__details a:hover,
+      .item__details a:active {
+        color: $color-primary;
+      }
+
+      & .item__ctabox {
+        @include items-flex;
+        gap: 6.4rem;
+        grid-column: 2 / -1;
+
+        & .item__wishlist,
+        & .item__remove {
+          @include items-flex;
+          gap: 1rem;
+        }
+      }
+    }
+
+    & .quantitybox {
+      width: 11%;
+      border-left: 1px solid $color-grey-light--1;
+      border-right: 1px solid $color-grey-light--1;
+      padding: 3.2rem 4.8rem;
+      vertical-align: middle;
+    }
+
+    & .unit-pricebox {
+      width: 18.21%;
+      padding: 3.2rem 4.8rem;
+      vertical-align: middle;
+    }
+
+    & .sub-totalbox {
+      border-left: 1px solid $color-grey-light--1;
+      width: 18.21%;
+      padding: 3.2rem 4.8rem;
+      vertical-align: middle;
+    }
+  }
+}

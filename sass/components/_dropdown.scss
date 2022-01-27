@@ -3,10 +3,10 @@
   background-color: #fff;
   line-height: $line-height-md;
   letter-spacing: 0.2px;
-  border: 1.4px solid #000;
+  border: 1.4px solid $color-grey-dark--2;
   z-index: 15;
   cursor: pointer;
-  transition: 280ms all 120ms ease-out;
+  // transition: 280ms all 120ms ease-out;
 
   position: absolute;
   top: 5.2%;
@@ -45,7 +45,7 @@
 
 .dropdown__title {
   background-color: transparent;
-  color: #000;
+  color: $color-grey-dark--2;
 
   border: 0;
   // margin: 0 3px;
@@ -86,12 +86,11 @@
 .dropdown__link:link,
 .dropdown__link:visited {
   display: inline-block;
-  text-decoration: none;
-  color: #000;
+  color: $color-grey-dark--2;
   padding: 0.5rem 2.4rem;
 }
 
 .dropdown__menu > li:hover .dropdown__link,
-.dropdown__menu > li:hover .dropdown__link {
+.dropdown__menu > li:active .dropdown__link {
   color: #fff;
 }

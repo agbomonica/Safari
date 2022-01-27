@@ -25,8 +25,8 @@ body {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -244,17 +244,21 @@ select {
   font-size: 1.5rem;
   font-weight: 300;
 }
-.pagination__link:link, .pagination__link:visited {
+.pagination__link:link,
+.pagination__link:visited {
   border-bottom: 3px solid transparent;
   padding: 1.5rem 1.8rem;
   display: inline-block;
   text-decoration: none;
   color: inherit;
 }
-.pagination__link:focus, .pagination__link:active {
+.pagination__link:focus,
+.pagination__link:active {
   border-bottom: 3px solid #ed165f;
 }
-.pagination:hover, .pagination:active, .pagination:focus-within {
+.pagination:hover,
+.pagination:active,
+.pagination:focus-within {
   border-bottom: 0.5px solid transparent;
 }
 .pagination__next-icon {
@@ -387,18 +391,24 @@ select {
   padding: 2.4rem;
   font-size: 1.4rem;
 }
-.footer__nav-link, .footer__social-link {
+.footer__nav-link,
+.footer__social-link {
   text-decoration: none;
   color: currentColor;
   transition: all 0.5s;
 }
-.footer__nav-link:hover, .footer__social-link:active {
+.footer__nav-link:hover,
+.footer__social-link:active {
   color: #4d4d4d;
 }
 .footer__grid {
-  grid-template-columns: min-content repeat(2, minmax(min-content, max-content)) minmax(min-content, 1fr) minmax(min-content, max-content);
+  grid-template-columns: min-content repeat(2, minmax(min-content, max-content)) minmax(
+      min-content,
+      1fr
+    ) minmax(min-content, max-content);
 }
-.footer__nav-list, .footer__social-list {
+.footer__nav-list,
+.footer__social-list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -452,7 +462,8 @@ select {
   cursor: pointer;
   transition: all 0.2s;
 }
-.footer__cta-button:hover, .footer__cta-button:active {
+.footer__cta-button:hover,
+.footer__cta-button:active {
   background-color: #d51456;
 }
 
@@ -482,7 +493,8 @@ select {
   gap: 6rem;
   align-items: center;
 }
-.nav__link:link, .nav__link:visited {
+.nav__link:link,
+.nav__link:visited {
   text-decoration: none;
   line-height: 1.8;
   font-size: 1.4rem;
@@ -493,7 +505,8 @@ select {
   border-bottom: 1px solid transparent;
   transition: all 0.3s;
 }
-.nav__link:focus, .nav__link:active {
+.nav__link:focus,
+.nav__link:active {
   color: #ed165f;
   padding-bottom: 1.2rem;
   border-bottom: 1px solid currentColor;
@@ -534,7 +547,8 @@ select {
   align-items: center;
   transition: all 0.2s;
 }
-.user-nav__link:focus-within > .user-nav__icon path, .user-nav__link:active > .user-nav__icon path {
+.user-nav__link:focus-within > .user-nav__icon path,
+.user-nav__link:active > .user-nav__icon path {
   fill: #ed165f;
 }
 
@@ -556,7 +570,8 @@ select {
   margin-top: -0.8rem;
   padding: 1.6rem 0 3.2rem;
 }
-.product__category, .product__cloth-gallery {
+.product__category,
+.product__cloth-gallery {
   border-top: 1px solid rgba(0, 0, 0, 0.5);
   padding-top: 3.2rem;
 }
@@ -565,7 +580,8 @@ select {
   flex-direction: column;
   gap: 3.2rem;
 }
-.product__category-link:link, .product__category-link:visited {
+.product__category-link:link,
+.product__category-link:visited {
   color: #686868;
   font-size: 1.6rem;
   font-weight: 500;
@@ -573,7 +589,9 @@ select {
   line-height: 1.8;
   transition: all 0.2s;
 }
-.product__category-link:hover, .product__category-link:active, .product__category-link:focus {
+.product__category-link:hover,
+.product__category-link:active,
+.product__category-link:focus {
   color: #ed165f;
 }
 .product__cloth-gallery {
@@ -768,7 +786,8 @@ select {
   column-gap: 5rem;
   align-items: center;
 }
-.product__text-grid::before, .product__text-grid::after {
+.product__text-grid::before,
+.product__text-grid::after {
   content: "";
   width: 100%;
   display: block;
@@ -806,7 +825,8 @@ select {
 .product__gallery:hover {
   box-shadow: 0 1rem 2.4rem rgba(0, 0, 0, 0.2);
 }
-.product__gallery:hover > .wishlist, .product__gallery:focus > .wishlist {
+.product__gallery:hover > .wishlist,
+.product__gallery:focus > .wishlist {
   opacity: 1;
 }
 .product__img {

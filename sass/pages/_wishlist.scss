@@ -1,0 +1,29 @@
+.wishlist__content {
+  gap: 3.2rem;
+}
+
+.favourite {
+  @extend %dashboard-base-styles;
+  padding: 4rem 2.4rem 3.2rem;
+  font-size: 1.4rem;
+
+  display: grid;
+  grid-template-columns: min-content minmax(min-content, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  column-gap: 3.2rem;
+  row-gap: 4.8rem;
+
+  &__ctabox {
+    grid-column: 1 / -1;
+
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+
+    & > a:last-child {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+}

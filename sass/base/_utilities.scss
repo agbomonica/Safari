@@ -1,6 +1,9 @@
 .text-center {
   text-align: center !important;
 }
+.text-left {
+  text-align: left !important;
+}
 
 .margin-top-sm {
   margin-top: 2rem !important;
@@ -22,5 +25,21 @@
 }
 
 .margin-bottom-sm {
+  margin-bottom: 1.6rem !important;
+}
+
+.margin-bottom-md {
   margin-bottom: 3rem !important;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 4rem !important;
+}
+
+.align-items-start {
+  align-items: start !important;
+}
+
+.align-item-start {
+  align-self: start !important ;
 }
