@@ -53,6 +53,7 @@ button,
 textarea,
 select {
   font: inherit;
+  color: inherit;
   font-size: 1.6rem;
 }
 
@@ -344,7 +345,7 @@ select {
   width: 80%;
 }
 .form__textarea:focus, .form__input:focus {
-  outline: 0;
+  outline: none;
   box-shadow: 0 0 0 1.6px #ed165f;
 }
 .form__textarea {
@@ -601,7 +602,7 @@ select {
   outline: none;
   box-shadow: 0 0 0 -0.6rem rgba(0, 0, 0, 0.2);
 }
-.price__range-input::placeholder {
+.price__range-input::input-placeholder {
   color: #333333;
 }
 
